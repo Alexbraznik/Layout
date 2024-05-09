@@ -1,0 +1,98 @@
+@import "../vars";
+@import "../mixin";
+
+.staff {
+  background-color: $background-color;
+  padding: 80px 0 50px;
+
+  &__description {
+    text-align: center;
+    margin-bottom: 48px;
+
+    h3 {
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 42px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    img {
+      margin: 0 auto;
+      margin-bottom: 24px;
+    }
+
+    p {
+      max-width: 920px;
+      margin: 0 auto;
+      line-height: 19px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    gap: 24px;
+
+    &-item {
+      width: 312px;
+      box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
+      text-align: center;
+    }
+
+    .close {
+      img {
+        margin-bottom: 24px;
+      }
+
+      h4 {
+        font-weight: 700;
+        line-height: 19px;
+        color: $text-color;
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: $text-color;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        margin-bottom: 24px;
+        text-transform: lowercase;
+      }
+    }
+
+    .open {
+      padding: 20px;
+      max-width: 290px;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  .staff__item-name {
+    padding-top: 63px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 10px;
+    color: $text-color;
+  }
+  .staff__item-profession {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    color: $text-color;
+    margin-bottom: 40px;
+  }
+  .staff__item-description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    margin-bottom: 40px;
+  }
+}
+
+.staff-item-experience {
+  color: $text-color;
+  font-weight: 600;
+  line-height: 19px;
+}

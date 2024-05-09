@@ -1,0 +1,21 @@
+@import "../vars";
+@import "../mixin";
+
+.slider-container {
+  @include flex-between-center;
+  margin-bottom: 33px;
+
+  .slider__left {
+    @include flex-end;
+    gap: 8px;
+  }
+
+  .inactive {
+    height: 25px;
+    width: 4px;
+  }
+
+  .slider__right {
+    display: flex;
+  }
+}

@@ -1,0 +1,174 @@
+@import "../vars";
+@import "../mixin";
+
+.footer {
+  background-color: $text-color;
+  color: $white-color;
+  position: relative;
+
+  &__title {
+    @include flex-between-center;
+    padding-top: 80px;
+    margin-bottom: 48px;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 20px;
+      text-transform: lowercase;
+    }
+    span {
+      color: $main-color;
+      font-size: 28px;
+      font-weight: 900;
+      line-height: 40px;
+      text-transform: uppercase;
+    }
+
+    p {
+      max-width: 862px;
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: lowercase;
+    }
+  }
+
+  &__line {
+    border: 1px solid #8c8c8c;
+    margin-bottom: 48px;
+  }
+
+  &__end {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 59px;
+
+    &-nav {
+      padding-left: 50px;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+      }
+
+      a {
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+        color: $white-color;
+        line-height: 16.8px;
+        text-transform: uppercase;
+
+        &:hover,
+        &:focus {
+          color: $main-color;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__background {
+    width: 100%;
+    height: 60px;
+    left: 0;
+    z-index: -2;
+    position: absolute;
+    background-color: #181818;
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-top: 20px;
+
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+    }
+  }
+}
+
+.end-conn-item {
+  display: flex;
+  gap: 23px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.conn-map-img {
+  width: 55px;
+  height: 55px;
+  background-color: #2c2c2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.end-conn-item h6 {
+  color: #8c8c8c;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.4px;
+  text-transform: uppercase;
+}
+
+.end-conn-item p {
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.person-connection {
+  max-width: 424px;
+}
+.person-photo {
+  width: 50px;
+  height: 50px;
+}
+.person-about {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  margin-bottom: 16px;
+}
+
+.person-name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.person-profession {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+.person-connection-description p {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 24px;
+}
+
+.connection-btn {
+  display: block;
+  padding: 12px 14px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 900;
+  background-color: $main-color;
+  color: $white-color;
+  border: 3px solid transparent;
+
+  &:hover {
+    background-color: $white-color;
+    color: $main-color;
+    border: 3px solid $main-color;
+  }
+}

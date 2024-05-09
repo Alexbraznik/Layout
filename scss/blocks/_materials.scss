@@ -1,0 +1,96 @@
+@import "../vars";
+@import "../mixin";
+
+.materials {
+  padding: 80px 0;
+
+  &__title {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 920px;
+    margin-bottom: 48px;
+
+    h3 {
+      color: $text-color;
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 42px;
+      text-transform: uppercase;
+      margin-bottom: 13px;
+    }
+
+    img {
+      margin: 0 auto;
+      margin-bottom: 24px;
+    }
+
+    p {
+      color: $text-color;
+      line-height: 19px;
+    }
+  }
+
+  &__news {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 58px;
+
+    &-item {
+      width: 424px;
+      height: 481px;
+      cursor: pointer;
+
+      img {
+        width: 424px;
+        height: 270px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+.news-item-title {
+  color: $text-color;
+  max-width: 350px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.news-item-date {
+  color: $text-color;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14px;
+  margin-bottom: 16px;
+}
+
+.news-item-description {
+  color: $text-color;
+  font-size: 16px;
+  max-width: 350px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.materials__btn {
+  display: block;
+  padding: 12px 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 900;
+  background-color: $main-color;
+  color: white;
+  border: 3px solid transparent;
+  margin: 0 auto;
+
+  &:hover {
+    background-color: $white-color;
+    color: $main-color;
+    border: 3px solid $main-color;
+  }
+}
+
+.materials__news-item:hover .news-item-title {
+  color: $main-color;
+}

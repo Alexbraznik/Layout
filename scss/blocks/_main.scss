@@ -1,0 +1,103 @@
+@import "../vars";
+@import "../mixin";
+
+.main {
+  padding-top: 80px;
+  background-color: $background-color;
+  padding-bottom: 80px;
+
+  &__content {
+    text-align: center;
+    color: $black-color;
+    margin-bottom: 40px;
+
+    h2 {
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 42px;
+      text-transform: uppercase;
+    }
+
+    img {
+      margin: 0 auto;
+      padding-top: 10px;
+    }
+
+    p {
+      padding-top: 24px;
+      margin: 0 auto;
+      max-width: 920px;
+      line-height: 20px;
+    }
+  }
+
+  &__grid {
+    @include grid-center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 38px;
+    column-gap: 24px;
+    margin-bottom: 58px;
+
+    &-item {
+      @include flex-center;
+      background-color: $white-color;
+      width: 424px;
+      height: 250px;
+      color: $black-color;
+
+      &-content {
+        @include flex-center;
+        flex-direction: column;
+        max-width: 404px;
+        padding: 0 28px;
+
+        img {
+          margin-bottom: 25px;
+          max-width: 35px;
+          max-height: 35px;
+        }
+
+        h4 {
+          font-size: 20px;
+          font-weight: 800;
+          line-height: 30px;
+        }
+
+        p {
+          text-align: center;
+          font-size: 14px;
+          line-height: 120%;
+        }
+      }
+      &:hover,
+      &:focus {
+        background-color: $main-color;
+        color: $white-color;
+      }
+    }
+  }
+
+  &__btn {
+    display: block;
+    background-color: $main-color;
+    color: $white-color;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 11px 18px;
+    margin: 0 auto;
+    border: 3px solid transparent;
+
+    &:hover {
+      background-color: $white-color;
+      color: $main-color;
+      border: 3px solid $main-color;
+    }
+  }
+}
+
+.main__grid-item:hover .main__grid-item-content img,
+.main__grid-item:focus .main__grid-item-content img {
+  filter: brightness(0) invert(1);
+}

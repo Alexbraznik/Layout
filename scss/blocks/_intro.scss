@@ -1,0 +1,49 @@
+@import "../vars";
+
+.intro {
+  padding-top: 150px;
+  max-width: 1090px;
+  margin: 0 auto;
+  text-align: center;
+  color: $white-color;
+  margin-bottom: 42px;
+
+  &__title {
+    h1 {
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 52px;
+      text-transform: uppercase;
+      margin-bottom: 13px;
+    }
+    span {
+      /* font-size: 56px; */
+      font-size: clamp(1.563rem, 0.794rem + 3.28vw, 3.5rem);
+      font-weight: 600;
+      line-height: 87px;
+      color: $main-color;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 21px;
+      margin-bottom: 48px;
+    }
+  }
+
+  &__btn {
+    padding: 16px 24px;
+    background-color: $main-color;
+    text-transform: uppercase;
+    color: $white-color;
+    font-weight: 900;
+    line-height: 15px;
+    border: 3px solid transparent;
+
+    &:hover {
+      background-color: $white-color;
+      color: $main-color;
+      border: 3px solid $main-color;
+    }
+  }
+}

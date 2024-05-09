@@ -1,0 +1,49 @@
+@import "../vars";
+@import "../mixin";
+
+.nav {
+  background-color: rgba(1, 1, 1, 0.76);
+
+  &__container {
+    @include flex-between-center;
+    padding: 26px 0 28px;
+    position: relative;
+  }
+
+  &__left {
+    max-width: 312px;
+    font-size: 20px;
+    font-weight: 900;
+    color: $white-color;
+
+    span {
+      font-size: 28px;
+      font-weight: 900;
+      text-transform: uppercase;
+      line-height: 32px;
+      color: $main-color;
+    }
+  }
+
+  &__right {
+    display: flex;
+    gap: 32px;
+
+    &-burger {
+      display: none;
+    }
+
+    a {
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: none;
+      color: $white-color;
+
+      &:hover,
+      &:focus {
+        color: $main-color;
+        text-decoration: underline;
+      }
+    }
+  }
+}

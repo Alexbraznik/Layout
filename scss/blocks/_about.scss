@@ -1,0 +1,75 @@
+@import "../vars";
+@import "../mixin";
+
+.about {
+  margin-bottom: 80px;
+
+  &__info {
+    @include flex-center;
+    padding-top: 80px;
+    margin-bottom: 25px;
+
+    &-left {
+      color: $black-color;
+      max-width: 720px;
+      margin-right: 60px;
+
+      h3 {
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 42px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+
+      span {
+        color: $main-color;
+      }
+
+      img {
+        margin-bottom: 24px;
+      }
+
+      p {
+        line-height: 24px;
+      }
+    }
+
+    &-right {
+      width: 100%;
+      height: 350px;
+    }
+  }
+
+  &__btn {
+    padding: 12px 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 900;
+  }
+}
+
+.btn-one {
+  background-color: $main-color;
+  color: white;
+  margin-right: 24px;
+  border: 3px solid transparent;
+
+  &:hover {
+    background-color: $white-color;
+    color: $main-color;
+    border: 3px solid $main-color;
+  }
+}
+
+.btn-two {
+  background-color: #e6e6e6;
+  color: black;
+  border: 3px solid transparent;
+
+  &:hover {
+    background-color: $white-color;
+    color: $black-color;
+    border: 3px solid #e6e6e6;
+  }
+}
